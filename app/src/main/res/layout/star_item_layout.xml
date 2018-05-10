@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:scaleX="0.85"
+              android:scaleY="0.85"
+              android:elevation="6dp"
+>
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:id="@+id/iv_star_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#00000000"
+            >
+            <TextView
+                android:gravity="bottom"
+                android:id="@+id/tv_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFFFF"
+                android:textSize="20sp"
+                android:shadowDy="2"
+                android:shadowDx="0"
+                android:shadowRadius="4"
+                android:text="2"
+                android:shadowColor="#80000000"/>
+            <TextView
+                android:gravity="bottom"
+                android:id="@+id/tv_star_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFFFF"
+                android:textSize="12sp"
+                android:shadowDy="2"
+                android:shadowDx="0"
+                android:shadowRadius="4"
+                android:text="/10"
+                android:shadowColor="#80000000" />
+            </LinearLayout>
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_cover"
+            android:src="@mipmap/bg_40black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+        />
+    </RelativeLayout>
+</LinearLayout>

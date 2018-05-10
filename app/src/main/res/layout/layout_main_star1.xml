@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:id="@+id/rl_vp_container"
+    android:orientation="vertical">
+    <com.bubu.a3dgallerydemo.StarView
+        android:layout_toLeftOf="@+id/viewpager"
+        android:id="@+id/view_left"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        />
+    <com.bubu.a3dgallerydemo.StarView
+        android:layout_toRightOf="@+id/viewpager"
+        android:id="@+id/view_right"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        />
+    <com.bubu.a3dgallerydemo.CustomViewPager
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="303dp"
+        android:id="@+id/viewpager"
+    />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/viewpager"
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_star_desc"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+</RelativeLayout>
